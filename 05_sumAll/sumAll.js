@@ -12,9 +12,7 @@ const sumAll = function (begin, end) {
   }
 
   if (begin > end) {
-    let temp = begin;
-    begin = end;
-    end = temp;
+    [begin, end] = [end, begin];
   }
 
   let sum = 0;
